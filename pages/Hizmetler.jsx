@@ -2,7 +2,19 @@ import React from "react";
 import Layout from "../components/Layout";
 import style from "../styles/index.module.css";
 import Head from 'next/head'
+import { useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Hizmetler = () => {
+
+useEffect(() => {
+    toast("Welcome to Our Page" , {
+      type : "success",
+      color : "black"
+    })
+}, [])
+
   return (
     <Layout>
      
@@ -37,6 +49,7 @@ const Hizmetler = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </Layout>
   );
 };
