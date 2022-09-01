@@ -59,6 +59,16 @@ $ npm install --save react-toastify
 $ yarn add react-toastify
 
 ```
+### To send mail with nextJs 
+
+```
+<form action="https://formsubmit.co/yourMailHere"
+              method="POST"
+              name="contact_form"
+              onSubmit={handleSubmit}
+              target="_blank"
+            >     
+      ```
 
 ```
 import React from 'react';
